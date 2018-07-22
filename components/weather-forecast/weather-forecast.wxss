@@ -1,0 +1,39 @@
+/* components/weather-forecast/weather-forecast.wxss */
+
+.time-icon {
+  height: 28rpx;
+  width: 36rpx;
+  margin-right: 10rpx;
+}
+
+.weather-forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx 0;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.weather-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.forecast-wrapper {
+  height: 150rpx;
+  display: flex;
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  width: 166.67rpx;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+}

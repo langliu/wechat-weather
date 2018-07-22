@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#cbeefd",
+    "navigationBarTitleText": "天气宝宝",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "component": true
+}

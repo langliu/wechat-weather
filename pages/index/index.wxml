@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class='weather-wrapper'>
+  <image class='weather-bg' src='{{background_image}}'></image>
+  <button class="location-wrapper" open-type="{{locationAuthType==1?'openSetting':''}}" bindopensetting="onTapLocation" bindtap='onTapLocation'>
+    <view class='location'>
+      <image class='location-icon' src='/images/icon/location-icon.png'></image>
+      <text>{{city}}</text>
+    </view>
+    <text wx:if="{{locationAuthType==0}}">点击获取当前位置</text>
+    <text wx:elif="{{locationAuthType==1}}">点击开启位置权限</text>
+    <text wx:else></text>
+  </button>
+  <view class='temperature'>{{temp}}°</view>
+  <view class='weather'>{{weather}}</view>
+  <view class='today-temp' bindtap='onTapDayWeather'>
+    <view class='today-date'>{{today}}</view>
+    <view>
+      <text>{{minTemp}}° - {{maxTemp}}°</text>
+      <image class='arrow-icon' src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+</view>
+
+<weather-forecast forecast="{{forecast}}"></weather-forecast>

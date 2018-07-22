@@ -1,0 +1,13 @@
+<view class='weather-forecast'>
+  <image class='time-icon' src='/images/icon/time-icon.png'></image>
+  <text>未来24小时天气预测</text>
+</view>
+<scroll-view scroll-x scroll-with-animation>
+  <view class='forecast-wrapper'>
+    <view class='forecast' wx:for="{{forecast}}" wx:key="item.id">
+      <text>{{item.time}}</text>
+      <image class='weather-icon' src='{{weatherIconMap[item.weather]}}'></image>
+      <text>{{item.temp}}°</text>
+    </view>
+  </view>
+</scroll-view>
